@@ -19,13 +19,13 @@ public class BinarySearch
 			{
 				bottom = middle +1;
 			}
-			else
+			else if(ray[middle] == item)
 			{
 				found = true;
 			}
 			middle = (bottom+top)/2;
 
-			if(bottom == top && !found)
+			if(bottom == top && ray[middle]!=item)
 			{
 				return -1;
 			}
