@@ -24,6 +24,11 @@ public class BinarySearch
 				found = true;
 			}
 			middle = (bottom+top)/2;
+
+			if(bottom == top && !found)
+			{
+				return -1;
+			}
 		}
 		return middle;
 	}
