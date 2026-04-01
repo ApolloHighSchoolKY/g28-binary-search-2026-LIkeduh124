@@ -8,7 +8,9 @@ public class BinarySearchTester
 
 		System.out.println("before calling binarySearch");
 		System.out.println(Arrays.toString(array));
-
+		
+		Arrays.sort(array);
+		System.out.println(Arrays.toString(array));
 		System.out.println("looking for 8 :: "+	BinarySearch.binarySearch(array,8));
 		System.out.println("looking for 39 :: "+	BinarySearch.binarySearch(array,39));
 		System.out.println("looking for 15 :: "+	BinarySearch.binarySearch(array,15));
