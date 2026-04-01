@@ -11,20 +11,24 @@ public class BinarySearch
 		boolean found = false;
 		while(!found)
 		{
+			//too high
 			if(ray[middle]>item)
 			{
 				top = middle-1;
 			}
+			//too low
 			else if(ray[middle]<item)
 			{
 				bottom = middle +1;
 			}
+			//found it
 			else if(ray[middle] == item)
 			{
 				found = true;
 			}
 			middle = (bottom+top)/2;
-
+			
+			//if the number isn't in the list
 			if(bottom == top && ray[middle]!=item)
 			{
 				return -1;
