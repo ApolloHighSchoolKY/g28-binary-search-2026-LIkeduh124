@@ -19,5 +19,6 @@ public class BinarySearchTester
 		System.out.println("looking for 3 :: "+ BinarySearch.binarySearch(array,3));
 		System.out.println("looking for 99 :: "+ BinarySearch.binarySearch(array,99));
 		System.out.println("looking for 57 :: "+ BinarySearch.binarySearch(array,57));
+
 	}
 }
